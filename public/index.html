@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Data</title>
+</head>
+<body>
+    <h1>Please fill data in the form below:</h1>
+    <form method="POST" action="/subjectnew">
+        <label>SUBJECT NAME:<input type="text" name="name"  autocomplete="off"></label>
+        <br>
+        <label>SUBJECT ID:<input type="number" name="id"  autocomplete="off"></label>
+        <br>
+       
+    <br />
+        <input type="submit" value="ADD SUBJECT">
+        
+    </form>
+
+    <a href="/viewsubjects">View subjects</a>
+
+    <form method="GET" action="/subjectname">
+        <h1>DISPLAY SUBJECT:</h1>
+        <!--
+    SUBJECT NAME: <input type = "text" name = "name" autocomplete="off">
+        <br />
+        <input type="submit" value="DISPLAY SUBJECT">
+        -->
+        <label for="subject">Choose a subject name:</label>
+        <select id="name" name="name">
+          <option value="AI">AI</option>
+          <option value="DAA">DAA</option>
+          <option value="DMDW">DMDW</option>
+          <option value="ENGLISH">ENGLISH</option>
+          <option value="HINDI">HINDI</option>
+          <option value="TELUGU">TELUGU</option>
+          <option value="SCIENCE">SCIENCE</option>
+          <option value="PYTHON">PYTHON</option>
+          <option value="C">C</option>
+          <option value="JAVA">JAVA</option>
+          <option value="BC">BC</option>
+          <option value="BIGDATA">BIGDATA</option>
+        </select> 
+        <input type="submit" value="DISPLAY SUBJECT">
+</form>
+    
+</body>
+</html>
